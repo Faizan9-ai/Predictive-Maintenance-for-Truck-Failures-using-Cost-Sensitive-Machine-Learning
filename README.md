@@ -1,12 +1,13 @@
-APS Failure Detection System – Machine Learning Project
+# Predictive-Maintenance-for-Truck-Failures-using-Cost-Sensitive-Machine-Learning
+
+#### Live deployed web app URL - https://huggingface.co/spaces/Faizan9-ai/APS-Failure-Prediction-System
+---
 
 A complete end-to-end Machine Learning pipeline designed to predict Air Pressure System (APS) failures in Scania trucks using high-dimensional and highly imbalanced sensor data.
 The goal is to minimize operational cost by identifying potential failures early, using cost-sensitive modeling and real-world deployment.
-
-Live deployed web app URL - https://huggingface.co/spaces/Faizan9-ai/APS-Failure-Prediction-System
-
-
- Project Overview
+--- 
+ 
+ ### Project Overview
 
 This project analyzes over 170 APS sensor readings from Scania trucks to detect failures in the Air Pressure System. The dataset is highly imbalanced, with only ~1.6% positive failure cases. Since missing a failure (False Negative) is 50× more costly than a false alarm (False Positive), we use a custom APS cost function to select the best model.
 
@@ -28,7 +29,8 @@ Saving the best model & deploying it on Hugging Face using a Gradio web app
 
 Final predictions for any new APS sensor CSV file
 
- Dataset
+--- 
+Dataset
 
 Dataset name: APS Failure at Scania Trucks
 Source: Kaggle / UCI Machine Learning Repository
@@ -49,6 +51,7 @@ High missingness in several features
 High-dimensional data
 
 Extreme cost difference between FN (500) and FP (10)
+--- 
 
 🔧 Tech Stack
 
@@ -113,7 +116,7 @@ Class imbalance analysis
 Outlier detection via boxplots
 
 Findings show strong separation in certain key sensors between normal and failure states.
-
+--- 
  Modeling
 
 Four ML models were trained using a unified preprocessing pipeline:
